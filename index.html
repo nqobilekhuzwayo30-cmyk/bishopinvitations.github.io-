@@ -211,6 +211,9 @@
       padding:1rem;
       text-align:center;
       overflow:hidden;
+      min-height:220px;
+      display:flex;
+      align-items:flex-end;
     }
 
     .card::before{
@@ -267,21 +270,10 @@
       font-size:.95rem;
     }
 
-    .card1{
-      background-image:url("images/1.png");
-    }
-
-    .card2{
-      background-image:url("images/2.jpeg");
-    }
-
-    .card3{
-      background-image:url("images/3.webp");
-    }
-
-    .card4{
-      background-image:url("images/4.jpg");
-    }
+    .card1{background-image:url("images/1.png");}
+    .card2{background-image:url("images/2.jpeg");}
+    .card3{background-image:url("images/3.webp");}
+    .card4{background-image:url("images/4.jpg");}
 
     footer{
       max-width:var(--max);
@@ -381,11 +373,7 @@
         <div class="content">
           <h2 class="section-title">Event Details</h2>
           <div class="details-grid">
-            <div class="card card1">
-              <div class="detail">
-                <span class="label">Celebration</span>
-              </div>
-            </div>
+            <div class="card card1"></div>
 
             <div class="card card2">
               <div class="detail">
