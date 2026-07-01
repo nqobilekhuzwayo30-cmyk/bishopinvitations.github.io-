@@ -6,9 +6,9 @@
   <meta name="description" content="Karl & Jacqueline 25th Anniversary Celebration invitation." />
   <title>Karl & Jacqueline - 25th Anniversary Celebration</title>
 
-  //fonts.googleapis.com">
-  //fonts.gstatic.com" crossorigin>
-  //fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
   <style>
     :root{
@@ -31,7 +31,7 @@
       margin:0;
       min-height:100vh;
       background:
-        linear-gradient(rgba(253,251,247,.82), rgba(253,251,247,.82)),
+        linear-gradient(rgba(253,251,247,.60), rgba(253,251,247,.60)),
         url("images/5.jpg");
       background-size:cover;
       background-position:center;
@@ -141,12 +141,12 @@
       position:absolute;
       inset:0;
       pointer-events:none;
-      opacity:.16;
+      opacity:.10;
       background:
-        radial-gradient(circle at top left, rgba(15,42,31,.28), transparent 22%),
-        radial-gradient(circle at top right, rgba(15,42,31,.18), transparent 22%),
-        radial-gradient(circle at bottom left, rgba(79,100,88,.18), transparent 22%),
-        radial-gradient(circle at bottom right, rgba(15,42,31,.22), transparent 22%);
+        radial-gradient(circle at top left, rgba(15,42,31,.18), transparent 22%),
+        radial-gradient(circle at top right, rgba(15,42,31,.12), transparent 22%),
+        radial-gradient(circle at bottom left, rgba(79,100,88,.12), transparent 22%),
+        radial-gradient(circle at bottom right, rgba(15,42,31,.15), transparent 22%);
       z-index:0;
     }
 
@@ -175,7 +175,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background:rgba(255,255,255,.72);
+      background:rgba(255,255,255,.55);
       z-index:0;
     }
 
@@ -391,7 +391,7 @@
     }
 
     .hero-inner-card{
-      background: rgba(255,255,255,.92);
+      background: rgba(255,255,255,.94);
       border: 1px solid rgba(15,42,31,.10);
       border-radius: 18px;
       padding: 1.2rem 1rem;
@@ -489,11 +489,11 @@
     <nav class="nav" id="nav">
       <a class="brand" href="#hero">Karl & Jacqueline - 25th Anniversary Celebration</a>
       <button type="button" id="menuBtn" aria-controls="menu" aria-expanded="false">Menu</button>
-      <ul id="menunu">
-        ><a href="#details">Details</a></l/li>
-        ><a href="#location">Location</a></l/li>
-        ><a href="#registry">Gifts</a></l/li>
-        ><a href="#thanks">Thank You</a></li>
+      <ul id="menu">
+        <li><a href="#details">Details</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#registry">Gifts</a></li>
+        <li><a href="#thanks">Thank You</a></li>
       </ul>
     </nav>
   </header>
@@ -543,7 +543,8 @@
             <p>
               <a href="https://www.google.com/maps/dir/?api=1&destination=Eagle+Canyon+Clubhouse" target="_blank" rel="noopener">Open directions to Eagle Canyon Clubhouse</a>
             </p>
-            <div class="map-wrap" aria-label="Map to Eagle Canyon Clubh             <iframe
+            <div class="map-wrap" aria-label="Map to Eagle Canyon Clubhouse">
+              <iframe
                 title="Eagle Canyon Clubhouse map"
                 loading="lazy"
                 src="https://www.google.com/maps?q=Eagle%20Canyon%20Clubhouse&output=embed">
