@@ -164,7 +164,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background:rgba(255,255,255,.75);
+      background:rgba(255,255,255,.80);
       z-index:0;
     }
 
@@ -368,6 +368,21 @@
       transform-origin: center;
     }
 
+    .hero-message{
+      background: rgba(255,255,255,.90);
+      border: 1px solid rgba(15,42,31,.10);
+      border-radius: 18px;
+      padding: 1.2rem 1rem;
+      max-width: 44rem;
+      margin: 0 auto;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 28px rgba(15,42,31,.10);
+    }
+
+    .hero-message p{
+      margin: 0.8rem 0;
+    }
+
     @keyframes floatPulse {
       0%, 100% { transform: translateY(0) scale(1); }
       50% { transform: translateY(-10px) scale(1.04) rotate(1deg); }
@@ -456,7 +471,7 @@
     <div class="botanical" aria-hidden="true"></div>
     <main id="main">
       <section class="hero hero-section" id="hero" aria-labelledby="title">
-        <div>
+        <div class="hero-message">
           <p class="eyebrow">~ ♡ ~</p>
           <h1 id="title">25 Wonderful Years of Marriage</h1>
           <p>Twenty-Five Years of Love<br>~ ♡ ~<br>Our Love Story Continues...</p>
@@ -475,11 +490,9 @@
                 <strong>Saturday, 29 August 2026</strong>
                 <span class="label" style="margin-top:.75rem;">Time</span>
                 <strong>6:00 pm</strong>
-                <span class="label" style="margin-top:.75rem;"></span>
-                <strong>Dress Code</strong>
-                <p>Come celebrate with us in your favorite shade starting with a “B”. 
-                  
-                  Brown, Beige, Black, Blue, Bronze, Blush, Burgundy.</p>
+                <span class="label" style="margin-top:.75rem;">Dress Code</span>
+                <strong>Brilliantly Elegant</strong>
+                <p>Come celebrate with us in your favorite shade starting with a “B”. Brown, Beige, Black, Blue, Bronze, Blush, Burgundy.</p>
               </div>
             </div>
           </div>
