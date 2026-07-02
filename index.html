@@ -16,9 +16,9 @@
       --green:#0F2A1F;
       --green-light:#4F6458;
       --silver:#4F6458;
-      --card:rgba(255,255,255,.80);
-      --shadow:0 10px 30px rgba(15,42,31,.08);
-      --radius:18px;
+      --card:rgba(255,255,255,.84);
+      --shadow:0 14px 34px rgba(15,42,31,.10);
+      --radius:20px;
       --max:1100px;
       --wa:#25D366;
       --wa-dark:#1fa956;
@@ -47,7 +47,7 @@
       content:"";
       position:fixed;
       inset:0;
-      background:rgba(253,251,247,.22);
+      background:rgba(253,251,247,.16);
       z-index:0;
       pointer-events:none;
     }
@@ -56,7 +56,7 @@
     img,iframe,video{max-width:100%;display:block}
 
     h1, h2, h3, p, a, strong, .label {
-      text-shadow: 0 1px 3px rgba(0,0,0,.10);
+      text-shadow: 0 1px 3px rgba(0,0,0,.08);
     }
 
     .skip{
@@ -84,15 +84,15 @@
       position:sticky;
       top:0;
       z-index:50;
-      background:rgba(253,251,247,.90);
-      backdrop-filter:blur(8px);
+      background:rgba(253,251,247,.88);
+      backdrop-filter:blur(10px);
       border-bottom:1px solid rgba(15,42,31,.08);
     }
 
     .nav{
       max-width:var(--max);
       margin:0 auto;
-      padding:.85rem 1rem;
+      padding:.95rem 1rem;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -151,12 +151,12 @@
       position:absolute;
       inset:0;
       pointer-events:none;
-      opacity:.08;
+      opacity:.06;
       background:
-        radial-gradient(circle at top left, rgba(15,42,31,.15), transparent 22%),
-        radial-gradient(circle at top right, rgba(15,42,31,.10), transparent 22%),
-        radial-gradient(circle at bottom left, rgba(79,100,88,.10), transparent 22%),
-        radial-gradient(circle at bottom right, rgba(15,42,31,.12), transparent 22%);
+        radial-gradient(circle at top left, rgba(15,42,31,.14), transparent 24%),
+        radial-gradient(circle at top right, rgba(15,42,31,.10), transparent 24%),
+        radial-gradient(circle at bottom left, rgba(79,100,88,.10), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(15,42,31,.12), transparent 24%);
       z-index:0;
     }
 
@@ -165,11 +165,11 @@
       z-index:1;
       max-width:var(--max);
       margin:0 auto;
-      padding:1rem;
+      padding:1.25rem 1rem 2rem;
     }
 
     section{
-      margin:1rem 0 1.25rem;
+      margin:1.75rem 0;
       background:var(--card);
       border:1px solid rgba(15,42,31,.06);
       border-radius:var(--radius);
@@ -186,7 +186,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background:rgba(255,255,255,.18);
+      background:rgba(255,255,255,.14);
       z-index:0;
       pointer-events:none;
     }
@@ -197,16 +197,16 @@
     }
 
     .hero{
-      min-height:68vh;
+      min-height:72vh;
       display:grid;
       place-items:center;
       text-align:center;
-      padding:2rem 1rem;
+      padding:2.5rem 1rem;
     }
 
     .eyebrow{
       font-family:"Great Vibes", cursive;
-      font-size:clamp(1.5rem, 4vw, 2.6rem);
+      font-size:clamp(1.6rem, 4vw, 2.7rem);
       margin:0 0 .35rem;
       color:var(--green-light);
     }
@@ -217,19 +217,19 @@
     }
 
     h1{
-      font-size:clamp(2rem, 7vw, 4.8rem);
+      font-size:clamp(2rem, 7vw, 4.9rem);
       letter-spacing:.02em;
       text-wrap:balance;
       color:var(--green-light);
     }
 
     .content{
-      padding:1rem;
+      padding:1.15rem;
       text-align:center;
     }
 
     .section-title{
-      font-size:clamp(1.5rem, 4vw, 2.2rem);
+      font-size:clamp(1.5rem, 4vw, 2.25rem);
       margin-bottom:1rem;
       text-align:center;
     }
@@ -237,8 +237,8 @@
     .card{
       position:relative;
       border:1px solid rgba(15,42,31,.07);
-      border-radius:16px;
-      padding:1rem;
+      border-radius:18px;
+      padding:1.15rem;
       text-align:center;
       overflow:hidden;
       min-height:220px;
@@ -246,8 +246,8 @@
       align-items:center;
       justify-content:center;
       flex-direction:column;
-      gap:.6rem;
-      background: rgba(255,255,255,.82);
+      gap:.7rem;
+      background: rgba(255,255,255,.80);
       background-size:cover;
       background-position:center;
       background-repeat:no-repeat;
@@ -258,7 +258,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background:rgba(255,255,255,.38);
+      background:rgba(255,255,255,.34);
       z-index:0;
       pointer-events:none;
     }
@@ -277,7 +277,7 @@
 
     .detail{
       display:grid;
-      gap:.35rem;
+      gap:.4rem;
       justify-items:center;
       align-items:center;
       text-align:center;
@@ -315,7 +315,7 @@
       background: rgba(255,255,255,.90);
       border: 1px solid rgba(15,42,31,.10);
       border-radius: 18px;
-      padding: 1.2rem 1rem;
+      padding: 1.25rem 1rem;
       max-width: 44rem;
       margin: 0 auto;
       backdrop-filter: blur(10px);
@@ -326,7 +326,7 @@
       background: rgba(255,255,255,.94);
       border: 1px solid rgba(15,42,31,.10);
       border-radius: 18px;
-      padding: 1.2rem 1rem;
+      padding: 1.25rem 1rem;
       max-width: 44rem;
       margin: 1rem auto 0;
       backdrop-filter: blur(10px);
@@ -334,7 +334,7 @@
     }
 
     .hero-media{
-      width: min(240px, 90%);
+      width: min(260px, 92%);
       margin: 0 auto 1rem;
       border-radius: 14px;
       overflow: hidden;
@@ -348,7 +348,7 @@
     }
 
     .hero-inner-card p{
-      margin: .7rem 0;
+      margin: .75rem 0;
       text-align:center;
     }
 
@@ -364,7 +364,7 @@
       flex-direction:column;
       align-items:center;
       justify-content:center;
-      gap:.65rem;
+      gap:.7rem;
       min-height:220px;
       text-align:center;
     }
@@ -388,11 +388,6 @@
     .wa-btn:hover{
       transform:translateY(-1px);
       background:var(--wa-dark);
-    }
-
-    @keyframes floatPulse {
-      0%, 100% { transform: translateY(0) scale(1); }
-      50% { transform: translateY(-10px) scale(1.04) rotate(1deg); }
     }
 
     footer{
@@ -421,12 +416,13 @@
         width:auto;
       }
 
-      .content{padding:1.25rem 1.25rem 1.4rem}
+      .content{padding:1.4rem 1.35rem 1.5rem}
       .details-grid{
         grid-template-columns:1fr;
       }
       .hero{
-        min-height:72vh;
+        min-height:78vh;
+        padding:3rem 1rem;
       }
     }
 
@@ -441,7 +437,7 @@
       }
 
       .hero{
-        padding:1.6rem 1rem;
+        padding:1.8rem 1rem;
       }
 
       .content{
@@ -579,4 +575,4 @@
     });
   </script>
 </body>
-</html>3.
+</html>
