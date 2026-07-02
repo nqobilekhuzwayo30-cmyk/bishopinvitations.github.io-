@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Karl & Jacqueline 25th Anniversary Celebration invitation." />
   <title>Karl & Jacqueline - 25th Anniversary Celebration</title>
+
   <link rel="icon" type="image/jpeg" href="image/6.jpg" />
+
+  <meta property="og:title" content="Karl & Jacqueline - 25th Anniversary Celebration" />
+  <meta property="og:description" content="Join us as we celebrate 25 wonderful years of marriage." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="YOUR_LIVE_GITHUB_PAGES_URL" />
+  <meta property="og:image" content="https://YOUR_DOMAIN_OR_GITHUB_PAGES_URL/image/6.jpg" />
+  <meta property="og:image:alt" content="Karl & Jacqueline celebration preview" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Karl & Jacqueline - 25th Anniversary Celebration" />
+  <meta name="twitter:description" content="Join us as we celebrate 25 wonderful years of marriage." />
+  <meta name="twitter:image" content="https://YOUR_DOMAIN_OR_GITHUB_PAGES_URL/image/6.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -435,13 +448,6 @@
     footer p{margin:0}
     footer p + p{margin-top:2rem}
 
-    .footnote{
-      margin-top:1.25rem;
-      font-size:.78rem;
-      color:var(--silver);
-      font-weight:600;
-    }
-
     .map-link{
       display:inline-block;
       margin-top:.35rem;
@@ -450,71 +456,31 @@
     }
 
     @media (min-width: 760px){
-      .nav{
-        flex-wrap:nowrap;
-      }
-
-      .brand{
-        width:auto;
-      }
-
+      .nav{flex-wrap:nowrap}
+      .brand{width:auto}
       .nav button{display:none}
-      .nav ul{
-        display:flex;
-        width:auto;
-      }
-
+      .nav ul{display:flex;width:auto}
       .content{padding:1.4rem 1.35rem 1.5rem}
-      .details-grid{
-        grid-template-columns:1fr;
-      }
-      .hero{
-        min-height:84vh;
-        padding:3.5rem 1rem;
-      }
+      .details-grid{grid-template-columns:1fr}
+      .hero{min-height:84vh;padding:3.5rem 1rem}
     }
 
     @media (max-width: 420px){
-      .brand{
-        white-space:normal;
-        line-height:1.2;
-      }
-
-      h1{
-        font-size:clamp(2rem, 11vw, 3.2rem);
-      }
-
-      .hero{
-        padding:1.8rem 1rem;
-      }
-
-      .content{
-        padding:.95rem;
-      }
-
-      .card{
-        padding:.95rem;
-      }
-
-      footer{
-        padding-bottom:20rem;
-      }
+      .brand{white-space:normal;line-height:1.2}
+      h1{font-size:clamp(2rem, 11vw, 3.2rem)}
+      .hero{padding:1.8rem 1rem}
+      .content{padding:.95rem}
+      .card{padding:.95rem}
+      footer{padding-bottom:20rem}
     }
 
     @media (hover:hover){
-      .card, .wa-btn, .nav a{
-        transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
-      }
-
-      .card:hover{
-        transform:translateY(-2px);
-      }
+      .card, .wa-btn, .nav a{transition:transform .2s ease, box-shadow .2s ease, background .2s ease}
+      .card:hover{transform:translateY(-2px)}
     }
 
     @media (max-width: 900px){
-      body{
-        background-attachment:scroll;
-      }
+      body{background-attachment:scroll}
     }
 
     @media (prefers-reduced-motion: reduce){
@@ -524,9 +490,7 @@
         opacity:1;
         transform:none;
       }
-      .wa-btn, .card{
-        transition:none;
-      }
+      .wa-btn, .card{transition:none}
     }
   </style>
 </head>
