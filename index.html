@@ -308,7 +308,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background:rgba(255,255,255,.30);
+      background:rgba(255,255,255,.40);
       z-index:0;
       pointer-events:none;
     }
@@ -513,7 +513,7 @@
   <header>
     <nav class="nav" id="nav" aria-label="Primary navigation">
       <a class="brand" href="#hero">Karl & Jacqueline - 25th Anniversary Celebration</a>
-      <button type="button" id="menuBtn" aria-controls="menu" aria-expanded="false">Menu</button>
+      <button type="button" id="menuBtn" aria-controls="menu" aria-expanded="false" aria-label="Open menu">Menu</button>
       <ul id="menu">
         <li><a href="#details">Details</a></li>
         <li><a href="#location">Location</a></li>
@@ -606,7 +606,7 @@
         <div class="content">
           <h2 class="section-title">Thank You</h2>
           <div class="card">
-            <img class="thanks-image" src="./images/10.png" alt="Thank you decoration">
+            <img class="thanks-image" src="./images/10.png" alt="Decorative thank-you illustration for the anniversary celebration">
             <p>Thank you for being part of this beautiful celebration and for sharing in our joy.</p>
           </div>
         </div>
@@ -616,19 +616,40 @@
 
   <footer>
     <p>🌿 ♡❤️💕 Karl & Jacqueline ♡ ❤️💕🌿</p>
-
-
-  <p style="margin-top:8rem;">💻 designed by Q&S. 💻</p>
+    <p style="margin-top:8rem;">With love and gratitude.</p>
+    <p style="margin-top:8rem;">💻 designed by Q&amp;S. 💻</p>
   </footer>
 
   <script>
     const nav = document.getElementById('nav');
     const menuBtn = document.getElementById('menuBtn');
     const sections = document.querySelectorAll('section');
+    const menuLinks = document.querySelectorAll('#menu a');
+
+    function closeMenu() {
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.setAttribute('aria-label', 'Open menu');
+    }
+
+    function openMenu() {
+      nav.classList.add('open');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      menuBtn.setAttribute('aria-label', 'Close menu');
+    }
 
     menuBtn?.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', String(open));
+      const isOpen = nav.classList.contains('open');
+      if (isOpen) closeMenu();
+      else openMenu();
+    });
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
     });
 
     const observer = new IntersectionObserver((entries) => {
