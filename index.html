@@ -15,10 +15,12 @@
       --cream:#FDFBF7;
       --green:#0F2A1F;
       --silver:#4F6458;
-      --card:rgba(255,255,255,.82);
+      --card:rgba(255,255,255,.80);
       --shadow:0 10px 30px rgba(15,42,31,.08);
       --radius:18px;
       --max:1100px;
+      --wa:#25D366;
+      --wa-dark:#1fa956;
     }
 
     *{box-sizing:border-box}
@@ -44,7 +46,7 @@
       content:"";
       position:fixed;
       inset:0;
-      background:rgba(253,251,247,.34);
+      background:rgba(253,251,247,.22);
       z-index:0;
       pointer-events:none;
     }
@@ -53,7 +55,7 @@
     img,iframe{max-width:100%;display:block}
 
     h1, h2, h3, p, a, strong, .label {
-      text-shadow: 0 1px 3px rgba(0,0,0,.12);
+      text-shadow: 0 1px 3px rgba(0,0,0,.10);
     }
 
     .skip{
@@ -81,7 +83,7 @@
       position:sticky;
       top:0;
       z-index:50;
-      background:rgba(253,251,247,.94);
+      background:rgba(253,251,247,.90);
       backdrop-filter:blur(8px);
       border-bottom:1px solid rgba(15,42,31,.08);
     }
@@ -148,12 +150,12 @@
       position:absolute;
       inset:0;
       pointer-events:none;
-      opacity:.10;
+      opacity:.08;
       background:
-        radial-gradient(circle at top left, rgba(15,42,31,.18), transparent 22%),
-        radial-gradient(circle at top right, rgba(15,42,31,.12), transparent 22%),
-        radial-gradient(circle at bottom left, rgba(79,100,88,.12), transparent 22%),
-        radial-gradient(circle at bottom right, rgba(15,42,31,.15), transparent 22%);
+        radial-gradient(circle at top left, rgba(15,42,31,.15), transparent 22%),
+        radial-gradient(circle at top right, rgba(15,42,31,.10), transparent 22%),
+        radial-gradient(circle at bottom left, rgba(79,100,88,.10), transparent 22%),
+        radial-gradient(circle at bottom right, rgba(15,42,31,.12), transparent 22%);
       z-index:0;
     }
 
@@ -183,7 +185,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background:rgba(255,255,255,.25);
+      background:rgba(255,255,255,.18);
       z-index:0;
       pointer-events:none;
     }
@@ -239,8 +241,11 @@
       overflow:hidden;
       min-height:220px;
       display:flex;
-      align-items:flex-end;
-      background: rgba(255,255,255,.88);
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      gap:.6rem;
+      background: rgba(255,255,255,.82);
       background-size:cover;
       background-position:center;
       background-repeat:no-repeat;
@@ -251,7 +256,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background:rgba(255,255,255,.45);
+      background:rgba(255,255,255,.38);
       z-index:0;
       pointer-events:none;
     }
@@ -259,6 +264,8 @@
     .card > *{
       position:relative;
       z-index:1;
+      text-align:center;
+      width:100%;
     }
 
     .details-grid{
@@ -270,6 +277,10 @@
       display:grid;
       gap:.35rem;
       justify-items:center;
+      align-items:center;
+      text-align:center;
+      max-width:42rem;
+      margin:0 auto;
     }
 
     .detail .label{
@@ -331,13 +342,14 @@
 
     .hero-inner-card p{
       margin: .7rem 0;
+      text-align:center;
     }
 
     .hero-section{background-image:url("images/1.jpg");}
     .details-section{background-image:url("images/2.jpeg");}
     .location-section{background-image:url("images/3.jpg");}
     .registry-section{background-image:url("images/8.png");}
-    .rsvp-section{background-image:url("images/7.jpg");}
+    .rsvp-section{background-image:url("images/2.jpeg");}
     .thanks-section{background-image:url("images/4.png");}
 
     .rsvp-card{
@@ -345,18 +357,30 @@
       flex-direction:column;
       align-items:center;
       justify-content:center;
-      gap:.45rem;
+      gap:.65rem;
       min-height:220px;
       text-align:center;
     }
 
-    .rsvp-card strong{
-      font-size:1.1rem;
+    .wa-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.5rem;
+      padding:.9rem 1.2rem;
+      border-radius:999px;
+      background:var(--wa);
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      letter-spacing:.03em;
+      box-shadow:0 10px 20px rgba(37,211,102,.24);
+      transition:transform .2s ease, background .2s ease;
     }
 
-    .rsvp-card .contact{
-      font-size:1rem;
-      letter-spacing:.02em;
+    .wa-btn:hover{
+      transform:translateY(-1px);
+      background:var(--wa-dark);
     }
 
     @keyframes floatPulse {
@@ -396,12 +420,6 @@
       }
       .hero{
         min-height:72vh;
-      }
-      .card{
-        text-align:left;
-      }
-      .detail{
-        justify-items:start;
       }
     }
 
@@ -517,7 +535,8 @@
           <div class="card rsvp-card">
             <strong>RSVP by 12 August 2026</strong>
             <p><strong>Jacqueline</strong></p>
-            <p class="contact">083 289 6775</p>
+            <p>083 289 6775</p>
+            <a class="wa-btn" href="https://wa.me/27832896775?text=Hello%20Jacqueline%2C%20I%20would%20like%20to%20RSVP%20for%20the%2025th%20Anniversary%20Celebration." target="_blank" rel="noopener">RSVP on WhatsApp</a>
           </div>
         </div>
       </section>
